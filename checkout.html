@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - E-Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Checkout</h1>
+
+    <div class="cart-summary">
+      <h2>Your Order</h2>
+      <div class="cart-item">
+        <span>Wireless Headphones</span>
+        <span>$59.99</span>
+      </div>
+      <div class="cart-item">
+        <span>Smartwatch</span>
+        <span>$99.99</span>
+      </div>
+      <hr />
+      <div class="cart-total">
+        <strong>Total:</strong>
+        <strong>$159.98</strong>
+      </div>
+    </div>
+
+    <form class="checkout-form" onsubmit="return redirectThankYou()">
+      <h2>Billing Details</h2>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <button type="submit" class="btn">Complete Purchase</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectThankYou() {
+      window.location.href = "thankyou.html";
+      return false;
+    }
+  </script>
+</body>
+</html>
