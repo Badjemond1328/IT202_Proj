@@ -85,15 +85,23 @@ main{
 
 .card{
     padding:20px;
-    border:1px solid rgba(0,0,0,0.03);
     display:flex;
     flex-direction:column;
     gap:10px;
 
 }
+
+/*overide bootstraps*/
 div.card {
-    background-color: #f5f5f5 !important;
+    border: transparent !important;
+    background-color: #d9d6d6 !important;
     border-radius: 12px !important;
+}
+.product-template-card {
+    border: transparent;
+    width: 70%;
+    padding:20px;
+    border-radius: none;
 }
 
 
@@ -108,7 +116,8 @@ div.card {
 
 .card p{
     margin:0;
-    font-size:13px;
+    font-weight:900;
+    font-size:18px;
     color:var(--muted);
 }
 
@@ -119,9 +128,16 @@ div.card {
     justify-content:space-between;
     gap:8px;
 }
+.product-template-card-row{
+    margin-top:auto; 
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+}
 .price{
-    font-size:18px;
-    font-weight:800;
+    font-size:26px;
+    font-weight:700;
 }
 .cart-btn{
     width:50px; height:35px;
@@ -129,7 +145,22 @@ div.card {
     border:2px dashed rgba(0,0,0,0.08);
     border-radius: 20px;
     border-color: #a19d9d;
-    display:flex; align-items:center; justify-content:center;
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+    background:transparent;
+    cursor:pointer;
+}
+.size-btn{
+    font-weight: 600;
+    width:60px; height:34px;
+    padding:4px 10px 4px 10px;
+    border:2px solid rgba(0,0,0,0.08);
+    border-radius: 5px;
+    border-color: #a19d9d;
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
     background:transparent;
     cursor:pointer;
 }
@@ -146,6 +177,20 @@ footer{
     right:0;
     box-shadow:0 -4px 18px rgba(0,0,0,0.3);
 }
+
+.subject{
+    font-weight: bold;
+    padding-right: 20px;
+}
+#about-pd{
+    padding-top: 30px;
+}
+.add-to-cart{
+    border-radius:20px !important;
+    background-color: black;
+    color: white
+}
+
 
 /* responsive tweaks */
 @media (max-width:720px){
