@@ -94,7 +94,7 @@ main{
 /*overide bootstraps*/
 div.card {
     border: transparent !important;
-    background-color: #d9d6d6 !important;
+    background-color: #ece9e9 !important;
     border-radius: 12px !important;
 }
 .product-template-card {
