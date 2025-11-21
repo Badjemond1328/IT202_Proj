@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Name Undecided | Products</title>
+        <link href="/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="nav-left" aria-label="site brand">
+                    <div id="logo">
+                        <a href="/">
+                            <img src="/img/proj_logo.png"/>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="nav-center" role="search">
+                    <form class="search" onsubmit="event.preventDefault(); alert('search: '+this.query.value)">
+                        <input name="query" type="search" placeholder="Search" aria-label="Search products" />
+                        <button type="submit" aria-label="Search">
+                            <img src="/img/search_icon.png" width="20px"/>
+                        </button>
+                    </form>
+                </div> -->
+                <nav class="nav-right" aria-label="user actions">
+                    <div><a href="/login/">Login</a></div>
+                        <div>|</div>
+                    <div><a href="/shopping-cart/">Cart</a></div>
+                </nav>
+            </header>
+            <main>
+                <div class="product-grid">
+                    <div class="main-left">
+                        <img src="/img/b_coat.png" style="width: 80%; padding-left:10%;">
+                    </div>
+                    <div class="product-template-main-right">
+                        <form>
+                            <div class="product-template-card">
+                                <div class="product-template-card-row">
+                                    <p>Men's Blue Coat</p>
+                                    <p>No reviews yet</p>
+                                </div>
+                                <h4 class="price">$250.50</h4>
+                                <p style="font-weight: bold; font-size: 16px;">Size</p>
+                                <a onclick="/*need to be worked on*/" class="product-template-card-row" style="color: inherit; text-decoration: none;">
+                                    <p class="size-btn">XS</p>
+                                    <p class="size-btn">S</p>
+                                    <p class="size-btn">M</p>
+                                    <p class="size-btn">L</p>
+                                    <p class="size-btn">XL</p>
+                                    <p class="size-btn">XXL</p>
+                                </a>
+                                <!-- first use of bootstrap -->
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="add-to-cart">Add to Cart</button>
+                                </div>
+                                <div style="padding-top: 20px;">
+                                    <h3 style="font-weight:600">Product details</h3>
+                                    <table>
+                                         <tr>
+                                            <td class="subject">Fabric type:</td>
+                                            <td>100% Fictional</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="subject">Origin:</td>
+                                            <td> Imported</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="about-pd">
+                                    <h3 style="font-weight:600">About this item</h3>
+                                    <p>This is a made-up item for a school assignment and shouldn't be considered as real. Although the product itself is real this webpage is in away a distributer an of this, thus its creators shall not be held liable for any loss in grade</p>
+                                </div>
+
+                            </div>
+                    </form>
+                    </div>
+                </div>
+                
+            </main>
+            <footer>© This is a 2025 school assignment template</footer>
+
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
