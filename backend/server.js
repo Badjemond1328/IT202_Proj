@@ -6,20 +6,22 @@ const port = 5500;
 app.use(cors());
 app.use(express.json());
 
-let testPro;
+let lastProduct;
 
 app.post("/api/productInfo", (req, res) => {
     const prodInfoUser = req.body;
-    let {productName, productPrice} = prodInfoUser;
+    let {productName, productPrice, productImg} = prodInfoUser;
+    
+    
 
-    testPro = productName;
+    lastProduct = {productName, productPrice, productImg};
     
 });
 
 
 
 app.get("/api/cart", (req,res) => {
-    res.json(testPro);
+    res.json(lastProduct);
 });
 
 app.listen(port, () => {
