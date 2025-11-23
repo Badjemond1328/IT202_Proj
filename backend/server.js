@@ -66,6 +66,9 @@ app.post("/api/changeQty", (req, res) => {
 
 });
 
+app.get("/api/clearCart", (req,res) => {
+    cart = [];
+});
 
 app.get("/api/getSubtotal", (req,res) => {
     let subtotal = 0;
