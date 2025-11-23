@@ -6,11 +6,16 @@
         const priceValues = await response.json();
         const {subtotal, tax, total} = priceValues;
         
+        if(subtotal == 0){
+            document.getElementById("shipping").textContent = "$0";
+            document.getElementById("total").textContent = "$0";
+        }
+        else{
+            document.getElementById("subtotal").textContent = "$" + subtotal;
+            document.getElementById("tax").textContent = "$" + tax;
+            document.getElementById("total").textContent = "$" + total;
         
-        document.getElementById("subtotal").textContent = "$" + subtotal;
-        document.getElementById("tax").textContent = "$" + tax;
-        document.getElementById("total").textContent = "$" + total;
-        
+        }
         
         
     } catch (err) {
