@@ -76,32 +76,8 @@
 					 					</div>
 					 				</div>
 				 				</div> -->
-								
-
-			<script>
-				(async () => {
-				try {
-					const response = await fetch("http://localhost:5500/api/cart");
-				
-					
-					const userCartData = await response.json();
-					console.log("Cart data:", userCartData);
-
-					let {productName, productPrice, productImg} = userCartData;
-					
-
-					
-					addProductToCart(productName, productPrice, productImg);
-					
-					
-				} catch (err) {
-					console.error("Fetch failed:", err);
-				}
-			})();
-
-				
-			</script>
-			<script src="/shopping-cart/shoppingCart.js"></script>
+		
+			
 
 
 				 				
@@ -114,10 +90,10 @@
 			 			<div class="col-md-12 col-lg-4">
 			 				<div class="summary">
 			 					<h3>Summary</h3>
-			 					<div class="summary-item"><span class="text">Subtotal</span><span class="price">$360</span></div>
-			 					<div class="summary-item"><span class="text">Discount</span><span class="price">$0</span></div>
-			 					<div class="summary-item"><span class="text">Shipping</span><span class="price">$0</span></div>
-			 					<div class="summary-item"><span class="text">Total</span><span class="price">$360</span></div>
+			 					<div class="summary-item"><span class="text">Subtotal</span><span id = "subtotal" class="price">$0</span></div>
+			 					<div class="summary-item"><span class="text">Shipping</span><span class="price">$5.99</span></div>
+			 					<div class="summary-item"><span class="text">Tax</span><span id = "tax" class="price">$0</span></div>
+			 					<div class="summary-item"><span class="text">Total</span><span id = "total" class="price">$0</span></div>
 			 					<button type="button" class="btn btn-dark btn-lg btn-block" style="font-weight: 800;">Checkout</button>
 				 			</div>
 			 			</div>
@@ -127,6 +103,7 @@
 		</section>
 	</main>
 </body>
+<script src="/shopping-cart/shoppingCart.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
