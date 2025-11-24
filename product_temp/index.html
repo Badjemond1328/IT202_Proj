@@ -34,27 +34,30 @@
             <main>
                 <div class="product-grid">
                     <div class="main-left">
-                        <img src="/img/b_coat.png" style="width: 80%; padding-left:10%;">
+                        <img id="product-img" src="/img/fallback.png" style="width: 80%; padding-left:10%;">
                     </div>
                     <div class="product-template-main-right">
                         <form>
                             <div class="product-template-card">
                                 <div class="product-template-card-row">
-                                    <p>Men's Blue Coat</p>
+                                    <p id="product-name">Product Name</p>
                                     <p>No reviews yet</p>
                                 </div>
-                                <h4 class="price">$250.50</h4>
+                                <h4 id="product-price" class="price">$0.00</h4>
                                 <p style="font-weight: bold; font-size: 16px;">Size</p>
-                                <a onclick="/*need to be worked on*/" class="product-template-card-row" style="color: inherit; text-decoration: none;">
-                                    <p class="size-btn">XS</p>
-                                    <p class="size-btn">S</p>
-                                    <p class="size-btn">M</p>
-                                    <p class="size-btn">L</p>
-                                    <p class="size-btn">XL</p>
-                                    <p class="size-btn">XXL</p>
-                                </a>
+                                <div class="product-template-card-row" style="color: inherit; text-decoration: none;">
+                                    <!-- Script.js will populate sizes into the <select id="size"> when available. -->
+                                    <select id="size" aria-label="Select size" style="padding:6px;">
+                                        <option>XS</option>
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                    </select>
+                                </div>
                                 <!-- first use of bootstrap -->
-                                <div class="d-grid gap-2">
+                                <div class="d-grid gap-2" style="padding-top:12px;">
                                     <button type="button" class="add-to-cart">Add to Cart</button>
                                 </div>
                                 <div style="padding-top: 20px;">
@@ -76,7 +79,7 @@
                                 </div>
 
                             </div>
-                    </form>
+                        </form>
                     </div>
                 </div>
                 
@@ -86,6 +89,7 @@
         </div>
         
         
+        <script src="/Script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
