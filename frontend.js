@@ -6,6 +6,8 @@ function shoppingCartClick(){
 
     console.log(productName, productPrice, productImg);
 
+    alert(productName + " added to cart.");
+
     
 
     (async () => {
